@@ -1,0 +1,23 @@
+<html>
+    <base href="/">
+    <head>
+        <script src="node_modules\core-js\client\shim.min.js"></script>
+        <script src="node_modules\zone.js\dist\zone.js"></script>
+        <script src="node_modules\reflect-metadata\Reflect.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="systemjs.config.js"></script>
+        <script>
+             System.import('dist').catch(function(err) {
+            console.error(err);
+        });
+        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>   
+    </head>
+    <body>
+        <!--<h1>this is from index html</h1>-->
+        <myapp></myapp>
+        </body>
+    </html>

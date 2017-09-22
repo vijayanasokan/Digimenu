@@ -1,0 +1,26 @@
+<div class="container" style="padding-bottom:42px;">
+  <div class="section">
+    <div class="row">
+      <div class="col s12">
+        <div class="section">
+          <div class="col s12">
+            <span class="title"></span>
+          </div>
+          <div class="col s12 m6 l4" *ngFor="let tile of tiles">
+            <md-card (click)="openDialog()" style="padding-block-start: 1%">
+              <md-card-header>
+                <img md-card-avatar>
+                <md-card-title>Header title</md-card-title>
+                <md-card-subtitle>Header subtitle</md-card-subtitle>
+              </md-card-header>
+              <img md-card-image width="305" height="229" src="{{tile.image}}" sizes="(max-width: 305px) 100vw, 305px">
+              <md-card-content>
+                <p>Here is some content</p>
+              </md-card-content>
+            </md-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

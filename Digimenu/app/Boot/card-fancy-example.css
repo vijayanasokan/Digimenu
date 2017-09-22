@@ -1,0 +1,68 @@
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url('../../app/images/shiba1.jpg');
+  background-size: cover;
+}
+
+
+.card-image {
+
+  overflow: hidden;
+
+  width: 100%;
+
+  position: relative;
+
+}
+
+.card-image:before {
+
+  content: '';
+
+  display: block;
+
+  padding-bottom: 75%; /* 600 / 800 = 0,75 */
+
+}
+
+.team-member .card-image:before {
+
+  padding-bottom: 100%;
+
+}
+
+.card-image > * {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.card-image > img {
+
+  bottom: auto;
+  right: auto;
+
+  width: 100%;
+
+  height: auto !important;
+
+}
+
+.card .card-content {
+  min-height: 105px;
+}
+.card .card-content .card-title {
+  line-height: 22px;
+  padding-top: 10px;
+}
+.title {
+  color:#846C63!important;
+  text-transform: uppercase;
+}
